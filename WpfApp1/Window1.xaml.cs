@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WpfApp1
 {
@@ -87,6 +87,11 @@ namespace WpfApp1
             public int PositionValue { get; set; }
             public double PositionPrice { get; set; }
             public double PriceCurrency { get; set; }
+
+        }
+
+        private void bMarkup_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }
