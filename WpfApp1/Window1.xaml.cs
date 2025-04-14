@@ -64,12 +64,16 @@ namespace WpfApp1
         }
         private void bQuotes_Click(object sender, RoutedEventArgs e)
         {
+            CentralBankServiceClient service = new CentralBankServiceClient();
+            var USD_res = service.ConvertValue(100, "USD");
+            var EUR_res = service.ConvertValue(100, "EUR");
+            var CNY_res = service.ConvertValue(100, "CNY");
             lbQuotes.Items.Clear();
-            lbQuotes.Items.Add("75,47 USD");
-            lbQuotes.Items.Add("80,24 EUR");
-            lbQuotes.Items.Add("10,88 CNY");
-            lbQuotes.SelectedIndex = 0;
-        }
+            lbQuotes.Items.Add($"{Math.Round(USD_res.currencyValue, 2)} USD"); 
+            lbQuotes.Items.Add($"{Math.Round(EUR_res.currencyValue, 2)} EUR");
+            lbQuotes.Items.Add($"{ Math.Round(CNY_res.currencyValue, 2)}CNY"); 
+lbQuotes.SelectedIndex = 0;
+    }
         private void sMarkup_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             lMarkup.Content = Math.Round(100 + sMarkup.Value, 2) + "%";

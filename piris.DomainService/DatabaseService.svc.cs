@@ -10,7 +10,7 @@ namespace piris.DomainService
     {
         public bool AddPosition(store_positions position)
         {
-            Logger.WriteInfo($"Creating position { position.positionName}"); 
+             //Logger.WriteInfo($"Creating position { position.positionName}"); 
 
 
             using (mysql_dbEntities _dbContext = new mysql_dbEntities())
@@ -23,7 +23,7 @@ namespace piris.DomainService
 
         public bool CreateUser(store_users user)
         {
-            Logger.WriteInfo($"Creating user {user.userName}");
+            //Logger.WriteInfo($"Creating user {user.userName}");
 
             using (mysql_dbEntities _dbContext = new mysql_dbEntities())
             {
@@ -44,7 +44,7 @@ u.userName == u.userName).FirstOrDefault();
 
         public bool DeletePosition(int id)
         {
-            Logger.WriteInfo($"Trying to delete position {id}");
+            //Logger.WriteInfo($"Trying to delete position {id}");
 
             using (mysql_dbEntities _dbContext = new mysql_dbEntities())
             {
@@ -62,7 +62,7 @@ p.id == id).FirstOrDefault();
 
         public store_positions GetPositionById(int id)
         {
-            Logger.WriteInfo($"Trying to get position {id}");
+            //Logger.WriteInfo($"Trying to get position {id}");
 
             using (mysql_dbEntities _dbContext = new mysql_dbEntities())
             {
@@ -73,7 +73,7 @@ p.id == p.id).FirstOrDefault();
         }
         public List<store_positions> GetPositions()
         {
-            Logger.WriteInfo("Trying to get all positions");
+            //Logger.WriteInfo("Trying to get all positions");
             using (mysql_dbEntities _dbContext = new mysql_dbEntities())
             {
                 var dbPositions =
@@ -84,7 +84,7 @@ _dbContext.store_positions.ToList();
 
         public store_users GetUserByUserName(string userName)
         {
-            Logger.WriteInfo($"Trying to get user {userName}");
+            //Logger.WriteInfo($"Trying to get user {userName}");
 
             using (mysql_dbEntities _dbContext = new mysql_dbEntities())
             {
@@ -101,7 +101,7 @@ u.userName == userName).FirstOrDefault();
         public store_positions UpdatePosition(store_positions
 position)
         {
-            Logger.WriteInfo($"Trying to update position { position.positionName}"); 
+            //Logger.WriteInfo($"Trying to update position { position.positionName}"); 
 
 
             using (mysql_dbEntities _dbContext = new mysql_dbEntities())

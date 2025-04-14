@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "piris.DomainService", "piri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{46F9FE06-485C-4B50-BAB2-1A6BBFC9C3FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "piris.ServerHost", "piris.ServerHost\piris.ServerHost.csproj", "{F050621A-DDD0-454C-A2C8-4055B18EA43C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{46F9FE06-485C-4B50-BAB2-1A6BBFC9C3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46F9FE06-485C-4B50-BAB2-1A6BBFC9C3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46F9FE06-485C-4B50-BAB2-1A6BBFC9C3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F050621A-DDD0-454C-A2C8-4055B18EA43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F050621A-DDD0-454C-A2C8-4055B18EA43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F050621A-DDD0-454C-A2C8-4055B18EA43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F050621A-DDD0-454C-A2C8-4055B18EA43C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
