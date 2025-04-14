@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="piris.DomainService.Service1" CodeBehind="DatabaseService.svc.cs" %>
